@@ -1,0 +1,23 @@
+{
+  "name": "spoonit",
+  "version": "1.0.0",
+  "description": "\"recipe webapp that uses an api\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafiddewan/CookingApp.git"
+  },
+  "author": "Rafid Dewan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafiddewan/CookingApp/issues"
+  },
+  "homepage": "https://github.com/rafiddewan/CookingApp#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {}
+}
