@@ -1,3 +1,5 @@
 /node_modules
 
 /dist/.DS_STORE
+dist/.DS_Store
+dist/img/.DS_Store
