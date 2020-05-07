@@ -4,6 +4,7 @@
   "description": "\"recipe webapp that uses an api\"",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,7 @@
   "bugs": {
     "url": "https://github.com/rafiddewan/CookingApp/issues"
   },
-  "homepage": "https://github.com/rafiddewan/CookingApp/blob/master/docs/src/index.html"
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
