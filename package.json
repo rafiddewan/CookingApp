@@ -1,9 +1,12 @@
 {
+  "homepage": "https://rafiddewan.github.io/CookingApp",
   "name": "spoonit",
   "version": "1.0.0",
   "description": "\"recipe webapp that uses an api\"",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/rafiddewan/CookingApp/issues"
   },
-  "homepage": "https://github.com/rafiddewan/CookingApp#readme",
   "devDependencies": {
     "webpack": "^4.43.0"
   },
