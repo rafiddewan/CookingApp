@@ -20,4 +20,6 @@ Mother's Day Gift for my mom to make me delicious food
 
 - devDepencies only tools that are used for development
 - dpeendencies are real dependincies used in our app such as REACCT API
-# API Used is All My Recipes.org
+
+# API Used is forkify-api 
+- Based on depricated food2fork API
