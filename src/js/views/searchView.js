@@ -35,7 +35,7 @@ const limitRecipeTitle = (title, limit = 17) => {
 const renderRecipe = (recipe) => {
   const markUp = `
     <li>
-        <a class="results__link" href="#${recipe.recipe_id}}">
+        <a class="results__link" href="#${recipe.recipe_id}">
             <figure class="results__fig">
                 <img src="${recipe.image_url}" alt="Test">
             </figure>
