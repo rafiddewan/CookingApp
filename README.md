@@ -19,7 +19,8 @@ Mother's Day Gift for my mom to make me delicious food
 - Run packages with NPM scripts
 
 - devDepencies only tools that are used for development
-- dpeendencies are real dependincies used in our app such as REACCT API
+- dpeendencies are real dependencies used in our app such as REACCT API
 
-# API Used is forkify-api 
-- Based on depricated food2fork API
+# APIs Used
+- forkify-api for collecting food data
+- Local Storage API allows us to save data within the browser (such as likes)
