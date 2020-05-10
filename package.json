@@ -4,9 +4,8 @@
   "description": "a web app that displays recipes for my mom to make me",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode production --open"
   },
   "browserslist": [
     "last 5 versions",
