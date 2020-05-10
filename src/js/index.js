@@ -99,7 +99,6 @@ const controlRecipe = async () => {
             
             //render recipe
             clearLoader();
-            console.log(state.recipe);
             recipeView.renderRecipe(state.recipe, state.likes.isLiked(id));
         } catch (err){
             alert('Error processing recipe');
@@ -132,7 +131,6 @@ elements.shoppingList.addEventListener('click', e => {
     } else if (e.target.matches('.shopping__count-value')){
         const val = parseFloat(e.target.value, 10);
         state.list.updateCount(id, val);
-        console.log(state.list);
     }
 });
 
