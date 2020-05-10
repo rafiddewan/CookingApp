@@ -4,10 +4,9 @@
   "description": "a web app that displays recipes for my mom to make me",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
-  },
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p"
+    },
   "browserslist": [
     "last 5 versions",
     "ie >= 8"
@@ -34,6 +33,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "fracty": "^1.0.9",
     "regenerator-runtime": "^0.13.5",
     "uniqid": "^5.2.0"
