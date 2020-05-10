@@ -9,7 +9,7 @@
 import Search from './models/Search';
 import Recipe from './models/Recipe';
 import * as searchView from './views/searchView';
-import * as recepieView from './views/recipeView';
+import * as recipeView from './views/recipeView';
 import { elements, renderLoader, clearLoader, elementStrings } from './views/base';
 
 /***Global state 
@@ -75,6 +75,11 @@ const controlRecipe = async () => {
 
     if(id){
         //Prepare UI for changes
+        recipeView.clearRecipe();
+        renderLoader(elements.recipe);
+
+        //highlight the current selected item
+        if(state.search) searchView.highlightSelected(id);
 
         //create recipe object
         state.recipe = new Recipe(id);
@@ -90,7 +95,9 @@ const controlRecipe = async () => {
             state.recipe.calcServings();
             
             //render recipe
+            clearLoader();
             console.log(state.recipe);
+            recipeView.renderRecipe(state.recipe);
         } catch (err){
             alert('Error processing recipe');
         }
@@ -99,6 +106,16 @@ const controlRecipe = async () => {
 
 ['hashchange', 'load'].forEach(event => window.addEventListener(event, controlRecipe));
 
+//handling recipe button clicks
+elements.recipe.addEventListener('click', e => {
+    if(e.target.matches('.btn-decrease, .btn-decrease *') && state.recipe.servings > 1){
+        state.recipe.updateServings('dec');
+    } else if(e.target.matches('.btn-increase, .btn-increase *')){
+        state.recipe.updateServings('inc');
+    }
+    recipeView.updateServingsIngredients(state.recipe);
+    console.log(state.recipe);
+});
 // const r = new Recipe(46956);
 // r.getRecipe();
 // console.log(r);
