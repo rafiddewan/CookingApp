@@ -49,7 +49,6 @@ const controlSearch = async () => {
             searchView.renderResults(state.search.result);    
 
         }catch(error){
-            alert("Cannot render this result");
         }
     }
 }

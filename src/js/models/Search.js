@@ -14,7 +14,7 @@ export default class Search{
             this.result = res.data.recipes;
         }
         catch (error) {
-            alert(error);
+            alert("Cannot find result, try searching pizza");
         }
     }
 }
