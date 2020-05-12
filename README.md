@@ -1,5 +1,5 @@
 # CookingApp
-Mother's Day Gift for my mom to make me delicious food
+Mother's Day Gift for my mom to make me delicious food. Simply search for an item (such as pizza) and you have your recipe! Can also add the items you require in a Shopping list.
 
 # MODERN JS
 - Node JS and NPM ecosystem
@@ -7,7 +7,7 @@ Mother's Day Gift for my mom to make me delicious food
 - NPM used to share packages to manage them
     - Simple command line interface
     - Allows us to write script to use our development tools
-- Babal (NPM Package)
+- Babel (NPM Package)
     - Convert ES6 ES7 or ES8 to ES5 so all browsers can understand our code
 - Webpack (NPM package)
     - ES6 module
@@ -18,9 +18,11 @@ Mother's Day Gift for my mom to make me delicious food
         - Decreasing JavaScript bundle size using the treeshaking algorithm
 - Run packages with NPM scripts
 
-- devDepencies only tools that are used for development
-- dpeendencies are real dependencies used in our app such as REACCT API
-
 # APIs Used
-- forkify-api for collecting food data
-- Local Storage API allows us to save data within the browser (such as likes)
+- Food2Fork API for collecting food data
+- Web Storage API allows us to save data within the browser (such as likes)
+
+# NEXT STEPS
+- Create a "Create account" option page that stores information instead of using browser cache
+- Create the backend for adding items to a cart with a MySQL database
+- Delete all items liked at once
